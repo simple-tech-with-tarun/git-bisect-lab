@@ -1,6 +1,3 @@
-import unavailable_discount_rules
-
-
 def calculate_discount(amount):
     """Calculate the discount based on the purchase amount."""
     MAX_DISCOUNT_RATE = 0.15
