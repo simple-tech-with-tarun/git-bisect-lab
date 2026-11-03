@@ -92,17 +92,20 @@ Documentation: [03-merge-bisect/README.md](03-merge-bisect/README.md)
 
 ### 5. Bisect Recovery and Reproducibility
 
-**Status: Planned**
+**Status: Completed**
 
-Practise recovering from incorrect investigation decisions.
+Practise recovering from incorrect investigation decisions and reproducing regression investigations.
 
 Topics:
 
-- Identifying incorrect good or bad markings.
-- Inspecting bisect decision history.
-- Resetting and replaying investigations.
-- Correcting investigation boundaries.
-- Independently verifying and reproducing final results.
+- Identify the impact of incorrect good/bad classifications.
+- Inspect and preserve investigation decisions using `git bisect log`.
+- Reset incorrect bisect sessions using `git bisect reset`.
+- Restart investigations with corrected classifications.
+- Understand the purpose and limitations of `git bisect replay`.
+- Independently verify regression-introducing commits using Git history and source diffs.
+
+Documentation: [`04-bisect-recovery/README.md`](04-bisect-recovery/README.md)
 
 ## Practical Approach
 

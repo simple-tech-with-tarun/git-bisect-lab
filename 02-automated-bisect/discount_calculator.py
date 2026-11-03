@@ -5,14 +5,14 @@ def calculate_discount(amount):
     if isinstance(amount, bool) or not isinstance(amount, (int, float)):
         raise TypeError("Purchase amount must be numeric.")
 
-    # Apply discount tiers based on the purchase amount.
+    # Discount rates are applied according to purchase amount.
     if amount < 0:
         raise ValueError("Purchase amount cannot be negative.")
 
     if amount >= HIGH_DISCOUNT_THRESHOLD:
         return amount * 0.15
     elif amount >= 500:
-        return amount * 0.02
+        return amount * 0.03
     elif amount >= 100:
         return amount * 0.05
     else:
