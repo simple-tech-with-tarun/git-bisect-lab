@@ -75,17 +75,20 @@ Documentation: [02-automated-bisect/README.md](02-automated-bisect/README.md)
 
 ### 4. Merge-Related Regression Investigation
 
-**Status: Planned**
+**Status: Completed**
 
-Investigate regressions introduced through branch integration and merge commits.
+Investigate regressions introduced through feature branches and subsequently integrated through merge commits.
 
 Topics:
 
-- Constructing histories with multiple feature branches.
-- Introducing regressions through integration.
+- Constructing histories with feature branches and merge commits.
+- Introducing and identifying regressions on feature branches.
 - Investigating merge commits and their parent relationships.
-- Understanding the limitations of ordinary bisect in complex histories.
-- Exploring alternative investigation strategies when necessary.
+- Using automated Git bisect across merge-related history.
+- Comparing first-parent and second-parent changes.
+- Distinguishing the original regression-introducing commit from the merge integration commit.
+
+Documentation: [03-merge-bisect/README.md](03-merge-bisect/README.md)
 
 ### 5. Bisect Recovery and Reproducibility
 
