@@ -9,7 +9,7 @@ def calculate_discount(amount):
         raise ValueError("Purchase amount cannot be negative.")
 
     # Apply the highest eligible discount tier.
-    if amount >= 1000:
+    if amount >= 1000
         return amount * MAX_DISCOUNT_RATE
     elif amount > HIGH_DISCOUNT_THRESHOLD:
         return amount * 0.10
