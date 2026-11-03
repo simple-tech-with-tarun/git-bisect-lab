@@ -8,7 +8,7 @@ def calculate_discount(amount):
 
     if amount >= 1000:
         return amount * 0.15
-    elif amount >= 500:
+    elif amount > 500:
         return amount * 0.10
     elif amount >= 100:
         return amount * 0.05
