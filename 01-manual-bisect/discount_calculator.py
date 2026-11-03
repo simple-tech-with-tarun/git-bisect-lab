@@ -1,5 +1,6 @@
 def calculate_discount(amount):
     """Calculate the discount based on the purchase amount."""
+    MAX_DISCOUNT_RATE = 0.15
     if isinstance(amount, bool) or not isinstance(amount, (int, float)):
         raise TypeError("Purchase amount must be numeric.")
 
@@ -7,7 +8,7 @@ def calculate_discount(amount):
         raise ValueError("Purchase amount cannot be negative.")
 
     if amount >= 1000:
-        return amount * 0.15
+        return amount * MAX_DISCOUNT_RATE
     elif amount > 500:
         return amount * 0.10
     elif amount >= 100:
