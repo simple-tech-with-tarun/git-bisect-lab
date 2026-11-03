@@ -12,7 +12,7 @@ def calculate_discount(amount):
     if amount >= HIGH_DISCOUNT_THRESHOLD:
         return amount * 0.15
     elif amount >= 500:
-        return amount * 0.10
+        return amount * 0.03
     elif amount >= 100:
         return amount * 0.05
     else:
