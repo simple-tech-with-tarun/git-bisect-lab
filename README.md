@@ -1,4 +1,3 @@
-
 # Git Bisect Lab
 
 A practical repository for learning advanced Git bisect techniques, identifying regression-introducing commits, automating regression investigations, and handling complex Git histories.
@@ -23,45 +22,62 @@ By completing this lab, you will be able to:
 
 ### 1. Manual Regression Investigation
 
+**Status: Completed**
+
 Practise identifying a regression-introducing commit through a controlled Git history.
 
 Topics:
+
 - Starting and terminating bisect sessions.
 - Marking known good and bad commits.
 - Understanding Git's candidate commit selection.
-- Inspecting bisect progress and current state.
+- Restricting an investigation to changes affecting a specific file.
 - Identifying and independently verifying the first bad commit.
 
+Documentation: [01-manual-bisect/README.md](01-manual-bisect/README.md)
+
 ### 2. Skipped and Untestable Commits
+
+**Status: Completed**
 
 Investigate histories containing commits that cannot be tested reliably.
 
 Topics:
+
 - Using `git bisect skip`.
+- Skipping specific commits by their hashes.
 - Understanding how skipped commits affect the search.
-- Inspecting candidate history with `git bisect visualize`.
 - Reviewing recorded decisions with `git bisect log`.
-- Replaying previous investigations with `git bisect replay`.
+- Understanding the limitations of identifying the exact first bad commit when revisions are skipped.
+
+Documentation: [01-manual-bisect/README.md](01-manual-bisect/README.md)
 
 ### 3. Automated Regression Investigation
 
-Automate commit testing using Git bisect and PowerShell scripts.
+**Status: Planned**
+
+Automate commit testing using Git bisect and PowerShell-compatible scripts.
 
 Topics:
+
 - Creating deterministic regression tests.
 - Using `git bisect run`.
 - Handling test exit codes:
-  - `0` — Good commit.
-  - `1` to `124` and `126` to `127` — Bad commit.
-  - `125` — Commit cannot be tested; skip it.
+  - `0` - Good commit.
+  - `1` to `124` - Bad commit.
+  - `125` - Commit cannot be tested; skip it.
+  - `126` and `127` - Command execution errors.
 - Comparing manual and automated investigation results.
 - Understanding the importance of repeatable test conditions.
 
 ### 4. Merge-Related Regression Investigation
 
+**Status: Planned**
+
 Investigate regressions introduced through branch integration and merge commits.
 
 Topics:
+
 - Constructing histories with multiple feature branches.
 - Introducing regressions through integration.
 - Investigating merge commits and their parent relationships.
@@ -70,9 +86,12 @@ Topics:
 
 ### 5. Bisect Recovery and Reproducibility
 
+**Status: Planned**
+
 Practise recovering from incorrect investigation decisions.
 
 Topics:
+
 - Identifying incorrect good or bad markings.
 - Inspecting bisect decision history.
 - Resetting and replaying investigations.
@@ -98,10 +117,10 @@ All exercises are performed incrementally, with investigation results verified b
 
 The exercises use:
 
-- **Git** — Version control and bisect investigation.
-- **Python** — Small application scenarios with controlled regressions.
-- **PowerShell** — Windows-compatible test automation.
-- **GitHub** — Repository hosting and documentation.
+- **Git** - Version control and bisect investigation.
+- **Python** - Small application scenarios with controlled regressions.
+- **PowerShell** - Windows-compatible test automation.
+- **GitHub** - Repository hosting and documentation.
 
 ## Expected Outcomes
 
@@ -128,4 +147,3 @@ The lab will be considered complete when:
 - Recovery and replay procedures have been demonstrated.
 - Commands, findings, scripts, and limitations have been documented.
 - Documentation has been reviewed and merged into `main`.
-
