@@ -54,7 +54,7 @@ Documentation: [01-manual-bisect/README.md](01-manual-bisect/README.md)
 
 ### 3. Automated Regression Investigation
 
-**Status: Planned**
+**Status: Completed**
 
 Automate commit testing using Git bisect and PowerShell-compatible scripts.
 
@@ -69,6 +69,9 @@ Topics:
   - `126` and `127` - Command execution errors.
 - Comparing manual and automated investigation results.
 - Understanding the importance of repeatable test conditions.
+- Automating regression investigation with PowerShell test runners.
+
+Documentation: [02-automated-bisect/README.md](02-automated-bisect/README.md)
 
 ### 4. Merge-Related Regression Investigation
 
