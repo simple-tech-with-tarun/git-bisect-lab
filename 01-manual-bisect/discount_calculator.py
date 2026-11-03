@@ -1,4 +1,5 @@
 def calculate_discount(amount):
+    """Calculate the discount based on the purchase amount."""
     if not isinstance(amount, (int, float)):
         raise TypeError("Purchase amount must be numeric.")
 
