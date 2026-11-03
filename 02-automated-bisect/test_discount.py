@@ -1,4 +1,10 @@
-from discount_calculator import calculate_discount
+import sys
+
+try:
+    from discount_calculator import calculate_discount
+except (ImportError, SyntaxError) as error:
+    print(f"UNTESTABLE: {error}")
+    sys.exit(125)
 
 
 def test_high_discount_tier():
